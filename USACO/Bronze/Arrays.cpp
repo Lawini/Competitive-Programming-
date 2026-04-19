@@ -46,7 +46,7 @@ void solve(){
      * Testing curly braces
      */
 
-//
+// 
 //        pair<string, int> pair1 = make_pair("Testing", 123);
 //        cout << pair1.first << " " << pair1.second << endl;
 //
@@ -56,30 +56,28 @@ void solve(){
 //        pair<string, string> pair2{"Testing", "curly braces"};
 //        cout << pair2.first << " " << pair2.second << endl;
 //
-//        pair<string, string> pair1{"Lam Yeu", "Ngoc Minh"};
-//        cout << pair1.first << " " << pair1.second << endl;
+    // //* tuples
+    // int a = 3, b = 4, c = 5;
+	// tuple<int, int, int> t = tie(a, b, c);
+	// cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
+	// get<0>(t) = 7;
+	// cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
 
-    //trong C thi no la struct
-
-    //* tuples
-    int a = 3, b = 4, c = 5;
-	tuple<int, int, int> t = tie(a, b, c);
-	cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
-	get<0>(t) = 7;
-	cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t) << endl;
-
-	tuple<string, string, int> tp2 = make_tuple("Hello", "world", 100);
-	string s1, s2;
-	int x;
-	tie(s1, s2, x) = tp2;
-	cout << s1 << " " << s2 << " " << x << endl;
+	// tuple<string, string, int> tp2 = make_tuple("Hello", "world", 100);
+	// string s1, s2;
+	// int x;
+	// tie(s1, s2, x) = tp2;
+	// cout << s1 << " " << s2 << " " << x << endl;
 
 
 }
 int main(){
+    freopen("input.txt", "r", stdin);
+    freopen("outpu.txt", "w", stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
+    
     int t = 1;
 //    cin >> t;
     while(t--){

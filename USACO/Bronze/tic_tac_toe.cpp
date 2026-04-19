@@ -21,7 +21,7 @@ void check(int solo[], int team[][26], char a, char b, char c){
         else if (a == c){
             x = a;
             y = b;
-        }
+        }N
         else if (b == c){
             x = b;
             y = a;
