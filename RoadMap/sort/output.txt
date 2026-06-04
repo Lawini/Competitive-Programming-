@@ -1,0 +1,5 @@
+Khong co nhan vien A
+Khong co nhan vien B
+Khong co nhan vien C
+Danh sach giam dan la
+MSV             Ho ten               Luong      Ban  

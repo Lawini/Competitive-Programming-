@@ -3,7 +3,7 @@ using namespace std;
 
 int n = 8, x[20];
 bool col[20], d1[40], d2[40]; // Mảng đánh dấu cột và 2 đường chéo
-
+int cnt = 0;
 void output() {
     for (int i = 1; i <= n; i++) cout << x[i] << " ";
     cout << endl;
@@ -22,7 +22,8 @@ void Backtrack(int i) { // i là hàng hiện tại đang xét
             col[j] = d1[i - j + n] = d2[i + j] = true;
 
             if (i == n) { // if (tìm thấy nghiệm)
-                output();
+                //output();
+                cnt++;
             } else {
                 Backtrack(i + 1); // Backtrack(i+1)
             }
@@ -36,5 +37,6 @@ void Backtrack(int i) { // i là hàng hiện tại đang xét
 
 int main() {
     Backtrack(1);
+    cout << cnt << endl;
     return 0;
 }
